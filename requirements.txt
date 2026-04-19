@@ -1,0 +1,16 @@
+# Run `python -m pip freeze` in your project virtual environment to generate this file with the exact versions of all dependencies.
+
+python==3.12
+tensorflow>=2.20.0
+tensorflow-datasets>=4.9.9
+torch>=2.9.1
+transformers>=4.57.5
+datasets>=4.5.0
+scikit-learn>=1.8.0
+numpy>=2.3.5
+pandas>=2.3.3
+matplotlib>=3.10.8
+seaborn>=0.13.2
+Pillow>=12.0.0
+requests>=2.32.5
+tqdm>=4.67.1
