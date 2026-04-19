@@ -1,9 +1,7 @@
-Activity 
-
 # Ethics and AI in Deep Learning: Annotated Bibliography
 
-**Course context:** CS 580: Deep Learning, MSCS AI Concentration
-**Audience:** Graduate students, instructors, and contributors to the course GitHub/Zotero library
+**Course context:** CS 580: Deep Learning, SNHU MSCS AI Concentration
+**Audience:** Graduate students, faculty, and contributors to the course GitHub/Zotero collection
 **Status:** Living bibliography for course use
 **Zotero Collection:** [1-1_Discussion](https://www.zotero.org/groups/6498006/cs/collections/8RUR8DUT/collection)
 **Last revised:** April 19, 2026
