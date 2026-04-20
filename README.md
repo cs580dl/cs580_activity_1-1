@@ -291,3 +291,7 @@ When adding a new source, include the following:
 
 Prefer sources that are peer-reviewed, official organizational documents, or otherwise reputable and verifiable. For rapidly changing industry documents, record the publication date and version number when available.
 
+## Use of Artificial Intelligence (AI) to Generate Content
+
+This supplemental course resource contains content created with the help of AI tools. AI-generated content has been thoroughly vetted by course instructor. Revisions have been made to ensure accuracy and clarity.
+
