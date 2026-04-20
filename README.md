@@ -21,13 +21,13 @@ This is not intended to be a final or exhaustive literature review. It is a shar
 
 ## Executive Summary
 
-This unified bibliography brings together **23 sources** on ethics and AI as it relates to deep learning: **14 scholarly sources** and **9 industry or standards-oriented sources**. The collection includes three seminal works that remain foundational for the field: *Gender Shades*, *Model Cards for Model Reporting*, and Rudin’s argument for using interpretable models instead of post hoc explanations in high-stakes settings. It also includes recent scholarly and industry work from 2023 or later on foundation models, large language models, AI agents, fairness, privacy, truthfulness, transparency, value alignment, deployment governance, and preparedness frameworks.
+This annotated bibliography brings together scholarly and industry sources on ethics and AI as it relates to deep learning. Its central claim is that ethics in deep learning is a lifecycle problem, not a single checklist item. Bias, privacy, transparency, accountability, truthfulness, and safety arise at different stages, but they also interact. Dataset problems can become model bias. Model opacity can become user overtrust. Reward optimization can become manipulative or unsafe behavior. Weak documentation can become accountability failure. Poor post-deployment monitoring can allow harm to persist long after release.
 
-The strongest pattern across the bibliography is that ethical concerns in deep learning cannot be reduced to one issue, such as bias or safety. Instead, they form a chain of responsibility across the full AI lifecycle. Data choices shape who is represented or excluded. Model objectives influence what systems optimize for. Interfaces affect whether users overtrust model outputs. Deployment policies determine who is accountable when systems fail. Post-deployment monitoring determines whether harms are detected after release. For students just beginning deep learning, this means ethics is not an “extra” topic added after technical design. It is part of how deep-learning systems are built, evaluated, released, and governed.
+The scholarly sources show that technical design choices have ethical consequences. Foundational works on intersectional bias, model documentation, and interpretability show why aggregate accuracy, vague transparency claims, and post hoc explanations are not enough in high-stakes settings. Recent sources extend those concerns to large language models, AI agents, and foundation models. They show that dataset governance, subgroup evaluation, fairness-aware optimization, truthful outputs, multilingual and cross-cultural evaluation, and value alignment are not separate from model development; they shape what deep-learning systems do and whom they affect.
 
-The bibliography also shows that ethical concerns evolve as AI systems become more capable and more widely adopted. Earlier concerns about dataset bias, interpretability, and documentation remain essential, but newer concerns include agentic behavior, reward hacking, AI-enabled cyber or biological misuse, cultural and linguistic value misalignment, and the political legitimacy of “aligned” systems in morally pluralistic societies. The industry sources show growing convergence around frontier-model safety frameworks, red teaming, capability thresholds, staged release, incident reporting, transparency reports, and post-deployment governance. At the same time, these documents are usually voluntary and often focus more heavily on catastrophic risks than on slower, cumulative harms such as labor disruption, cultural exclusion, environmental cost, and unequal access.
+The industry and standards sources show how organizations are trying to operationalize these concerns through red teaming, threat modeling, capability thresholds, staged deployment, transparency reports, incident reporting, provenance, quality assurance, and post-deployment governance. These practices suggest movement from broad ethical principles toward concrete governance processes, though many remain voluntary and often focus more on catastrophic risks than slower harms such as labor disruption, cultural exclusion, environmental cost, and unequal access.
 
-For the discussion prompt, students might use this bibliography in three ways. First, they can identify a core ethical concern, such as bias, privacy, transparency, accountability, truthfulness, or safety. Second, they can connect that concern to a specific deep-learning mechanism, such as training data, reward functions, model opacity, prompts, deployment thresholds, or user interfaces. Third, they can explain why human responsibility remains central even when AI systems appear autonomous: humans choose datasets, define objectives, design evaluation procedures, interpret risks, approve releases, and respond to harms.
+For CS 580 students, the key takeaway is that human responsibility expands as AI becomes more advanced. Students should connect ethical concerns to specific mechanisms such as training data, objectives, prompts, interfaces, safeguards, release decisions, and monitoring. A mature ethical view should not replace familiar concerns with newer ones. It should connect them.
 
 ## How to Use This Bibliography in Discussion
 
@@ -45,12 +45,6 @@ Use one or two sources to support a clear claim about which ethical concern is m
 
 Use the bibliography to extend a peer’s point. For example, if a peer focuses on bias, you might explain how bias concerns evolve when models become multilingual, multimodal, or agentic. If a peer focuses on transparency, you might connect transparency to trust calibration, truthfulness, or post-deployment monitoring. If a peer focuses on accountability, you might ask who should be responsible: model developers, deployers, users, regulators, or all of them.
 
-### Suggested Zotero/GitHub tags
-
-Recommended tags for this shared bibliography include:
-
-`AI ethics`, `deep learning`, `fairness`, `bias`, `privacy`, `transparency`, `interpretability`, `trust`, `truthfulness`, `accountability`, `alignment`, `value pluralism`, `foundation models`, `large language models`, `AI safety`, `preparedness`, `red teaming`, `post-deployment governance`, `industry framework`, `standards`.
-
 ## Thematic Map
 
 | Theme | Useful sources | Why the theme matters |
@@ -61,6 +55,31 @@ Recommended tags for this shared bibliography include:
 | Value alignment and moral disagreement | Santurkar et al.; Agarwal et al.; Chakraborty et al.; Schwerzmann & Campolo; Schuster & Kilov | “Aligned” AI systems may still reflect particular cultural, political, linguistic, or institutional values. |
 | Agentic systems and misuse risk | Pan et al.; OpenAI; Google DeepMind; Anthropic; Meta | More capable systems may plan, use tools, pursue rewards, or enable misuse in ways that require stronger evaluation and governance. |
 | Lifecycle accountability | Mitchell et al.; Partnership on AI; OpenAI; Anthropic; Meta; Microsoft | Responsibility extends from dataset construction and model training to release decisions, monitoring, incident response, and decommissioning. |
+
+
+
+## Suggested Student Reading Paths
+
+### If your post focuses on bias or fairness
+
+Start with Buolamwini and Gebru, then read Mittal et al. and Yang et al. Add Sivakumar et al. if you want to discuss why prompt-based fixes are not enough.
+
+### If your post focuses on transparency or trust
+
+Start with Mitchell et al. and Rudin. Then read Heersmink et al. and Hicks et al. to connect transparency to user trust, hallucination, and truthfulness.
+
+### If your post focuses on accountability
+
+Start with Microsoft and Partnership on AI. Then compare OpenAI, Anthropic, Google DeepMind, and Meta to see how major AI companies frame deployment gates and preparedness.
+
+### If your post focuses on value alignment
+
+Start with Santurkar et al. and Agarwal et al. Then read Schwerzmann and Campolo and Schuster and Kilov for a deeper challenge: whose values should AI systems align with?
+
+### If your post focuses on advanced AI safety
+
+Start with Pan et al., then read Anthropic, OpenAI, Google DeepMind, and Meta. Add Partnership on AI’s post-deployment report to discuss what happens after release.
+
 
 ## Annotated Bibliography
 
@@ -244,40 +263,6 @@ Yang and colleagues provide an empirical example of fairness-aware deep learning
 
 **Discussion use:** Helpful for posts about healthcare AI, fairness-aware optimization, high-stakes deployment, and balancing performance with equity.
 
-## Cross-Cutting Synthesis
-
-The sources in this bibliography support one central claim: **ethics in deep learning is a lifecycle problem, not a single checklist item**. Bias, privacy, transparency, accountability, and safety arise at different stages of the lifecycle, but they also interact. Dataset problems can become model bias. Model opacity can become user overtrust. Reward optimization can become manipulative behavior. Weak documentation can become accountability failure. Poor post-deployment monitoring can allow harms to persist long after release.
-
-The scholarly sources show why technical design choices have ethical consequences. Buolamwini and Gebru show that aggregate accuracy can hide intersectional harm. Mittal et al. show that dataset governance is central to fairness and privacy. Yang et al. show that fairness can be included in optimization objectives. Rudin shows that interpretability may need to be built in from the start. Heersmink et al. and Hicks et al. show why LLM fluency can create misplaced trust and truthfulness problems. Santurkar et al., Agarwal et al., Chakraborty et al., Schwerzmann and Campolo, and Schuster and Kilov show that alignment is not just technical; it is cultural, political, and moral. Pan et al. show that advanced agentic systems may optimize for success in ways that conflict with ethical behavior.
-
-The industry and standards sources show how organizations are trying to operationalize these concerns. OpenAI, Anthropic, Google DeepMind, and Meta all use versions of threat modeling, capability thresholds, red teaming, and staged deployment. Microsoft emphasizes responsible AI processes, internal governance, tooling, transparency notes, and customer support. Partnership on AI emphasizes shared responsibility across the value chain and post-deployment documentation. IEEE emphasizes standards, provenance, transparency, and quality assurance. Together, these sources show a field moving from abstract principles toward operational governance.
-
-For CS 580 students, the most important takeaway is that human responsibility does not disappear as AI becomes more advanced. In fact, responsibility expands. Humans decide what data to collect, what labels to use, what objectives to optimize, what risks to measure, what safeguards count as adequate, who gets to use the system, and what happens when harm occurs. Even when AI systems become more autonomous, they remain embedded in human choices, institutions, incentives, and values.
-
-The bibliography also suggests how ethical concerns may evolve. Students may initially focus on familiar concerns such as bias, privacy, and transparency. As they study deeper models and more capable systems, those concerns should expand to include agentic behavior, misuse, value pluralism, cross-lingual fairness, deployment thresholds, incident reporting, and post-deployment monitoring. A mature ethical view should not replace earlier concerns with newer ones. It should connect them.
-
-## Suggested Student Reading Paths
-
-### If your post focuses on bias or fairness
-
-Start with Buolamwini and Gebru, then read Mittal et al. and Yang et al. Add Sivakumar et al. if you want to discuss why prompt-based fixes are not enough.
-
-### If your post focuses on transparency or trust
-
-Start with Mitchell et al. and Rudin. Then read Heersmink et al. and Hicks et al. to connect transparency to user trust, hallucination, and truthfulness.
-
-### If your post focuses on accountability
-
-Start with Microsoft and Partnership on AI. Then compare OpenAI, Anthropic, Google DeepMind, and Meta to see how major AI companies frame deployment gates and preparedness.
-
-### If your post focuses on value alignment
-
-Start with Santurkar et al. and Agarwal et al. Then read Schwerzmann and Campolo and Schuster and Kilov for a deeper challenge: whose values should AI systems align with?
-
-### If your post focuses on advanced AI safety
-
-Start with Pan et al., then read Anthropic, OpenAI, Google DeepMind, and Meta. Add Partnership on AI’s post-deployment report to discuss what happens after release.
-
 ## Contribution Guidelines for the Course GitHub and Zotero Library
 
 When adding a new source, include the following:
@@ -290,6 +275,12 @@ When adding a new source, include the following:
 6. **Recommended tags** for Zotero/GitHub searchability
 
 Prefer sources that are peer-reviewed, official organizational documents, or otherwise reputable and verifiable. For rapidly changing industry documents, record the publication date and version number when available.
+
+### Suggested Zotero/GitHub tags
+
+Recommended tags for this shared bibliography include:
+
+`AI ethics`, `deep learning`, `fairness`, `bias`, `privacy`, `transparency`, `interpretability`, `trust`, `truthfulness`, `accountability`, `alignment`, `value pluralism`, `foundation models`, `large language models`, `AI safety`, `preparedness`, `red teaming`, `post-deployment governance`, `industry framework`, `standards`.
 
 ## Use of Artificial Intelligence (AI) to Generate Content
 
