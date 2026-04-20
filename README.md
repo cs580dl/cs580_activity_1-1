@@ -280,7 +280,7 @@ Prefer sources that are peer-reviewed, official organizational documents, or oth
 
 Recommended tags for this shared bibliography include:
 
-`AI ethics`, `deep learning`, `fairness`, `bias`, `privacy`, `transparency`, `interpretability`, `trust`, `truthfulness`, `accountability`, `alignment`, `value pluralism`, `foundation models`, `large language models`, `AI safety`, `preparedness`, `red teaming`, `post-deployment governance`, `industry framework`, `standards`.
+AI-ethics deep-learning fairness bias privacy transparency interpretability trust truthfulness accountability alignment value pluralism foundation-models large-language-models AI-safety preparedness red-teaming, post-deployment-governance industry-framework AI-standards
 
 ## Use of Artificial Intelligence (AI) to Generate Content
 
