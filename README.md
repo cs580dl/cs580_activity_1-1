@@ -153,6 +153,16 @@ This IEEE Standards Association communique places generative AI governance insid
 
 **Discussion use:** Helpful for posts about standards, accountability, transparency, quality assurance, and how technical communities share responsibility for AI governance.
 
+### Leavy et al
+
+Leavy, S., O’Sullivan, B., & Siapera, E. (2020). *Data, power and bias in artificial intelligence*. arXiv. https://arxiv.org/abs/2008.07341
+
+This paper provides an interdisciplinary narrative review of research on bias, fairness, governance, and social justice in artificial intelligence systems. Leavy and colleagues synthesize literature from machine learning, critical race studies, feminism, data governance, and ethics to argue that bias in AI is not solely a technical issue, but also a social and political one shaped by historical inequalities and power structures. The paper discusses topics such as predictive policing, healthcare bias, facial recognition disparities, fairness tradeoffs in systems like COMPAS, and the limitations of attempting to create fully “objective” datasets. A major contribution of the paper is its synthesis of technical fairness research with critical social theory, particularly its argument that data collection and curation are inherently value-laden processes. The paper is especially useful for graduate students because it connects algorithmic bias to the broader AI lifecycle, including data governance, model development, deployment, and accountability.
+
+As a narrative review and secondary source, this article serves well as a starting point for understanding the field and identifying foundational primary research. However, when discussing empirical findings or specific studies referenced in the paper, students should cite the original primary sources rather than Leavy et al. directly. Leavy et al. should primarily be cited for the authors’ own conceptual framing, synthesis, interpretations, and original analytical arguments.
+
+**Discussion use**: Helpful for posts about bias, fairness, governance, data justice, intersectionality, accountability, and the relationship between technical AI systems and broader social structures.
+
 ### Meta
 
 Meta. (2026, April 7). *Advanced AI scaling framework* [Official framework report]. https://ai.meta.com/static-resource/Meta_Advanced-AI-Scaling-Framework-v2
